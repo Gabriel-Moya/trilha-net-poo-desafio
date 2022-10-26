@@ -25,6 +25,13 @@ namespace DesafioPOO.Models
             Console.WriteLine("Recebendo ligação...");
         }
 
+        public void ListarInformacoes()
+        {
+            Console.WriteLine($"Modelo: {_modelo}");
+            Console.WriteLine($"Memoria: {_memoria}GB");
+            Console.WriteLine($"IMEI: {_imei}");
+        }
+
         public abstract void InstalarAplicativo(string nomeApp);
     }
 }
